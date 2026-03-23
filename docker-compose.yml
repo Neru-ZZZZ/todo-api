@@ -12,6 +12,7 @@ services:
       - db
     environment:
       - DATABASE_URL=postgresql://postgres:postgres@db:5432/todos
+      - SECRET_KEY=supersecretkey123
 
   db:
     image: postgres:15
